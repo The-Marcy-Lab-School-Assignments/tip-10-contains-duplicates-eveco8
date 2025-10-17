@@ -12,8 +12,19 @@
  */
 
 const containsDuplicate = (nums) => {
-  //write your code here
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[0] === nums[i]) {
+      return true
+    } else {
+      return false
+    }
+  }
 };
+
+// iterate through each number
+// if number repeats return true 
+
+
 
 // Export the function for testing
 module.exports = { containsDuplicate };
